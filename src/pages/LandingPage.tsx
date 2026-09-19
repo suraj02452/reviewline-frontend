@@ -14,7 +14,7 @@ import { Logo } from "../components/ui/Logo.tsx";
 import { Button } from "../components/ui/Button.tsx";
 import { CodeDiff, type DiffLine } from "../components/ui/CodeDiff";
 import AnnotationCallout from "../components/ui/AnnotationCallout.tsx";
-import { heroDiffLines, heroAnnotations, testimonials } from "../data/mockData";
+import { heroDiffLines, heroAnnotations } from "../data/mockData";
 import { billingApi } from "../api/billingApi";
 import { useAuth } from "../context/AuthContext";
 import type { ApiError } from "../api/client";

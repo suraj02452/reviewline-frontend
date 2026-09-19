@@ -3,7 +3,6 @@ import {
   FilePlus2,
   Bug,
   ShieldAlert,
-  Sparkles,
   ArrowRight,
   TrendingUp,
   type LucideIcon,

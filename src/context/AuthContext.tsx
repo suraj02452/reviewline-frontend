@@ -62,6 +62,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       avatarUrl: authUser.avatarUrl,
       googleConnected: authUser.googleConnected,
       createdAt: new Date().toISOString(),
+      planStatus: "free",
+      reviewsThisMonth: 0,
     };
     setUser(fullUser);
   }, []);
@@ -76,6 +78,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       avatarUrl: authUser.avatarUrl,
       googleConnected: authUser.googleConnected,
       createdAt: new Date().toISOString(),
+      planStatus: "free",
+      reviewsThisMonth: 0,
     };
     setUser(fullUser);
   }, []);
