@@ -54,7 +54,7 @@ export const authApi = {
   },
 
   getGoogleAuthUrl(): string {
-    return "http://localhost:8080/oauth2/authorization/google?prompt=select_account";
+    return "https://reviewline-backend.onrender.com/oauth2/authorization/google";
   },
 
   async logout(): Promise<void> {
