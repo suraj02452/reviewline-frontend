@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import AppLayout from "../components/layout/AppLayout";
 import { Button } from "../components/ui/Button";
-import { reviewApi, type ReviewResult } from "../api/reviewApi";
+import { reviewApi } from "../api/reviewApi";
 import type { ApiError } from "../api/client";
 
 const LANGUAGES = [
