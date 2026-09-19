@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import { Lock, Mail, AlertTriangle, CheckCircle2, Loader2 } from "lucide-react";
+import { Lock, AlertTriangle, CheckCircle2, Loader2 } from "lucide-react";
 import AppLayout from "../components/layout/AppLayout";
 import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";

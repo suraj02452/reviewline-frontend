@@ -340,7 +340,7 @@ const ReviewDetailPage = () => {
           )}
           {filteredIssues.map((issue) => {
             const meta = severityMeta[issue.severity];
-            const Icon = meta.icon;
+            //const Icon = meta.icon;
             return (
               <div key={issue.id} className="relative">
                 <div className="mb-2 flex items-center gap-2 font-mono text-xs text-paper-500">
