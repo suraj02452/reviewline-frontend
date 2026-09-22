@@ -1,32 +1,40 @@
-# React + TypeScript + Vite
+# Reviewline Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Frontend client for **Reviewline**, an AI-powered code review SaaS. Built with React, TypeScript, and Vite, it provides the full user-facing experience for submitting code, viewing AI-generated review feedback, and managing an account.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Landing page** — product marketing/entry point
+- **Auth flow** — login, registration, Google OAuth, and email verification
+- **Dashboard** — overview of review activity and usage stats
+- **Submit a review** — send code to the backend for AI analysis
+- **Review history & detail view** — browse past reviews and drill into individual results
+- **Sample review** — a demo review for users evaluating the product before signing up
+- **Account settings**
 
-## React Compiler
+## Tech stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React · TypeScript · Vite
 
-## Expanding the Oxlint configuration
+## Project structure
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+src/
+  api/         API client calls to the reviewline-backend service
+  components/  Shared UI components
+  context/     React context providers (e.g. auth state)
+  pages/       Route-level pages (Dashboard, NewReview, History, Settings, ...)
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+Requires the [reviewline-backend](https://github.com/suraj02452/reviewline-backend) API running (or a configured API URL) to function fully.
+
+## Related
+
+- [reviewline-backend](https://github.com/suraj02452/reviewline-backend) — the Spring Boot API this app talks to
